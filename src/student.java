@@ -6,19 +6,19 @@ public class student {
 	private String name;
 	private int id;
 	private int age;
-	private String email;
+	private String gender;
 	
 	public student() {
 		
 		//default constructor
 	}
 
-	public student(String name, int id, int age, String email) {
+	public student(String name, int id, int age, String gender) {
 	
 		this.name = name;
 		this.id = id;
 		this.age = age;
-		this.email = email;
+		this.gender = gender;
 	}
 	
 	
@@ -45,18 +45,18 @@ public class student {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public String getEmail(){
+	public String getGender(){
 		return email;
 		
 	}
 	
-	public void setEmail(String email){
-	         this.email =email;
+	public void setGender(String gender){
+	         this.gender =gender;
 		
 	}	
 
 	public void msg() {
-		System.out.println(name+ " " + id + " " + age + " " + email);
+		System.out.println(name+ " " + id + " " + age + " " + gender);
 	}
 
 }
